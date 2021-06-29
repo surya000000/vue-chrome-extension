@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "version": "0.1.0",
+    "name": "Vue component extension",
+    "homepage_url": "http://localhost:8080/",
+    "description": "A Vue Browser Extension",
+    "default_locale": "en",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "vue chrome extension"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' ; object-src 'self'"
+    }
+}
